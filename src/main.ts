@@ -37,7 +37,7 @@ export = function(RED: any) {
         protected attachEvents() {
             // respond to inputs....
             this.on('input', (msg: any) => {
-                this.warn(`I saw a payload1231323: ${msg.payload}`);
+                this.warn(`I saw a payload: ${msg.payload}`);
                 // in this example just send it straight on... should process it here really
                 this.send(msg);
             });
